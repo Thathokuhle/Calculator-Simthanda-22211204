@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier New", Courier, monospace;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 46, 81);
+}
+
+.container {
+    position: relative;
+    min-width: 180px;
+    min-height: 400px;
+    padding: 40px 0px 30px 30px;
+    border-radius: 20px;
+    background-color: rgb(0, 21, 49);
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25), 10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25), inset 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.container span {
+    display: grid;
+    place-items: center;
+    user-select: none;
+    width: 70px;
+    color: #08fdd8;
+    height: 70px;
+    position: relative;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 50%;
+    background-color: rgb(36, 62, 95);
+    border: none;
+    -webkit-box-shadow: 0px 75px 146px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 75px 146px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 75px 146px 0px rgba(0, 0, 0, 0.35);
+}
+
+.poweredOff {
+    background-color: rgb(116, 108, 89);
+    color: #fff;
+}
+
+.calculator span:active {
+    filter: brightness(1.8);
+}
+
+.calculator span i {
+    position: relative;
+    font-style: normal;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+}
+
+.calculator .value {
+    grid-column: span 4;
+    position: relative;
+    grid-column: span 4;
+    height: 140px;
+    width: calc(100% - 50px);
+    left: 10px;
+    border: none;
+    outline: none;
+    background-color: #5e7d77;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+    text-align: right;
+    padding: 15px;
+    font-size: 2.1em;
+    color: #000;
+}
+
+.calculator .mode:hover {
+    filter: brightness(2.5);
+}
+
+.calculator .leftPane {
+    color: #fff;
+    background-color: #08fdd8;
+    font-size: 1.5em;
+    text-align: center;
+    place-items: center;
+}
+
+.calculator .leftPane.mult {
+    font-size: 0.9em;
+    text-transform: unset;
+    font-weight: 600;
+}
+
+.calculator .clear {
+    color: #fff;
+    background-color: #08fdd8;
+}
+
+.toggleMode {
+    width: 180px;
+    border-radius: 32px;
+    border: none;
+    grid-column: span 2;
+    padding: 0;
+    filter: brightness(1.8);
+    background-color: rgb(168, 82, 82);
+    color: #fff;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.toggleMode:active {
+    filter: brightness(1.5);
+}

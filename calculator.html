@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" name="calc" class="calculator">
+            <input placeholder="Calculator Is Off" type="text" class="value" readonly name="txt" id="display" />
+            <!--First row-->
+            <input type="button" value="ON" class="toggleMode" id="switchMode" onclick="togglePowerMode()">
+            <span class="num " onclick="getOperator('%')"><i>%</i></span>
+            <span class="num leftPane" onclick="getOperator('/')"><i>/</i></span>
+            <!--Second row-->
+            <span class="num" onclick="DisplayOnScreen('7')"><i>7</i></span>
+            <span class="num" onclick="DisplayOnScreen('8')"><i>8</i></span>
+            <span class="num" onclick="DisplayOnScreen('9')"><i>9</i></span>
+            <span class="num leftPane mult" onclick="getOperator('*')"><i>x</i></span>
+            <!--Third row-->
+            <span class="num" onclick="DisplayOnScreen('4')"><i>4</i></span>
+            <span class="num" onclick="DisplayOnScreen('5')"><i>5</i></span>
+            <span class="num" onclick="DisplayOnScreen('6')"><i>6</i></span>
+            <span class="num leftPane" onclick="getOperator('-')"><i>-</i></span>
+            <!--Fourth row-->
+            <span class="num" onclick="DisplayOnScreen('1')"><i>1</i></span>
+            <span class="num" onclick="DisplayOnScreen('2')"><i>2</i></span>
+            <span class="num" onclick="DisplayOnScreen('3')"><i>3</i></span>
+            <span class="num leftPane" onclick="getOperator('+')"><i>+</i></span>
+            <!--Fiveth row-->
+            <span class="num clear" onclick="clearMyisplay()"><i>AC</i></span>
+            <span class="num" onclick="DisplayOnScreen('0')"><i>0</i></span>
+            <span class="num" onclick="DisplayOnScreen('.')"><i>.</i></span>
+            <span class="num equal leftPane" onclick="CalculateResult()"><i>=</i></span>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
